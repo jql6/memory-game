@@ -1,17 +1,22 @@
 
 .app-card {
   display: inline-block;
+  aspect-ratio: 164 / 220;
+  width: 9rem;
 }
 
 .app-card .card {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
+  cursor: default;
   font-size: 15rem;
   margin: 0px;
   padding: 0px;
 }
 
 .app-card .card-background {
+  aspect-ratio: 164 / 220;
+  height: 12.1rem;
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;

@@ -1,0 +1,11 @@
+
+.card-list {
+  display: inline-grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-list-container {
+  margin: 0px auto;
+  width: 80%;
+}
