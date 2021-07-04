@@ -1,0 +1,39 @@
+
+.app-card {
+  display: inline-block;
+}
+
+.app-card .card {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 15rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app-card .card-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.app-card .card-background::before {
+  display: block;
+  aspect-ratio: 164 / 220;
+  content: "";
+  height: 12.1rem;
+}
+
+.app-card .card-background .card {
+  position: absolute;
+  bottom: -13.8%;
+  left: -8.5%;
+}
+
+.app-card .black:hover {
+  color: #0025cc
+}
+
+.app-card .red:hover {
+  color: #cc0000
+}
