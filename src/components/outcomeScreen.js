@@ -3,7 +3,6 @@ import "./outcomeScreen.css";
 import React from "react";
 
 function OutcomeScreen(props) {
-  console.log(props.lose);
   return (
     <div
       id="lose-screen"
