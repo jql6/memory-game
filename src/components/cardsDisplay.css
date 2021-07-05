@@ -5,7 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.card-list-container {
+.cards-display {
   margin: 0px auto;
   width: 80%;
 }

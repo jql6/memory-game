@@ -2,6 +2,7 @@
 import "./cardsDisplay.css";
 import React, { useState, useEffect } from "react";
 import AppCard from "./appCard";
+import OutcomeScreen from "./outcomeScreen";
 import cardDict from "../cardDict";
 import sampleArray from "../myFunctions";
 
@@ -60,7 +61,7 @@ function CardsDisplay(props) {
   };
 
   return (
-    <div className="card-list-container">
+    <div className="cards-display">
       <div className="card-list">
         {cardList.map((cardName) => {
           return (
