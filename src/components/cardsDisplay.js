@@ -5,7 +5,7 @@ import AppCard from "./appCard";
 import cardDict from "../cardDict";
 import sampleArray from "../myFunctions";
 
-function CardsDisplay() {
+function CardsDisplay(props) {
   // Create a card list
   const [cardList] = useState([
     "Ace of Spades",
@@ -23,14 +23,24 @@ function CardsDisplay() {
     console.log(clickedCards);
   }, [clickedCards]);
 
+  const checkHighScore = (score) => {
+    if (props.highScoreValue < score) {
+      props.highScoreFunction(score);
+    }
+  };
+
   const checkCardInList = (cardName) => {
     if (clickedCards.includes(cardName)) {
       console.log("You lose!");
       // Reset the clicked cards
       setClickedCards([]);
+      // Reset scores
+      props.currentScoreFunction(0);
     } else {
       // Add the clicked card to the list of clicked cards
       setClickedCards([...clickedCards, cardName]);
+      props.currentScoreFunction(props.currentScoreValue + 1);
+      checkHighScore(props.currentScoreValue + 1);
     }
   };
 

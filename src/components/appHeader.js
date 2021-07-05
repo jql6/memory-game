@@ -1,17 +1,7 @@
 // appHeader.js
-import React, { useState } from "react";
+import React from "react";
 
-function AppHeader() {
-  const [currentScore, setCurrentScore] = useState(0);
-  const [highScore, setHighScore] = useState(1);
-
-  const updateScore = (number) => {
-    setCurrentScore(number);
-    setHighScore(number);
-  };
-
-  console.log(updateScore);
-
+function AppHeader(props) {
   return (
     <header className="App-header">
       <h1>Card memory game</h1>
@@ -20,7 +10,8 @@ function AppHeader() {
         | <a href="https://jql6.github.io/">Return to homepage</a>
       </p>
       <p>
-        Current Score: {currentScore} | High score: {highScore}
+        Current Score: {props.currentScoreValue} | High score:{" "}
+        {props.highScoreValue}
       </p>
     </header>
   );
