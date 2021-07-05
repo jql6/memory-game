@@ -1,22 +1,26 @@
 
+:root {
+  --card-font-size: 240px;
+}
+
 .app-card {
   display: inline-block;
   aspect-ratio: 144 / 240;
-  width: 9rem;
+  width: calc(var(--card-font-size) * (9 / 15));
 }
 
 .app-card .card {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: default;
-  font-size: 15rem;
+  font-size: var(--card-font-size);
   margin: 0px;
   padding: 0px;
 }
 
 .app-card .card-background {
   aspect-ratio: 164 / 220;
-  height: 12.1rem;
+  height: calc(var(--card-font-size) * (12.1 / 15));
   background-color: rgba(0, 0, 0, 0.3);
   overflow: hidden;
   position: relative;
@@ -26,7 +30,7 @@
   display: block;
   aspect-ratio: 164 / 220;
   content: "";
-  height: 12.1rem;
+  height: calc(var(--card-font-size) * (12.1 / 15));
 }
 
 .app-card .card-background .card {
