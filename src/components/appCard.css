@@ -9,6 +9,10 @@
   width: calc(var(--card-font-size) * (9 / 15));
 }
 
+.app-card p {
+  height: var(--card-font-size) * (9 / 15);
+}
+
 .app-card .card {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
@@ -35,7 +39,7 @@
 
 .app-card .card-background .card {
   position: absolute;
-  bottom: -7%;
+  bottom: -11%;
   left: -8.5%;
 }
 
