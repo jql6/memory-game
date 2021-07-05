@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import AppHeader from "./components/appHeader";
 import CardsDisplay from "./components/cardsDisplay";
 
@@ -9,6 +10,10 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Memory game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <AppHeader currentScoreValue={currentScore} highScoreValue={highScore} />
       <CardsDisplay
         currentScoreFunction={setCurrentScore}
