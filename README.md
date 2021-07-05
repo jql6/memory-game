@@ -2,6 +2,8 @@
 
 Game that tests your memory by asking you to click cards you haven't seen yet.
 
+![Card game demo](https://user-images.githubusercontent.com/46179386/124510857-97162100-dd89-11eb-8cc7-0aaf81ee8773.gif)
+
 ---
 
 ## Usage
