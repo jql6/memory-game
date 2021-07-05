@@ -45,7 +45,7 @@ function CardsDisplay(props) {
 
   const [winState, setWinState] = useState(false);
   // Cheat mode for debugging (you get to see clicked cards)
-  const [cheat] = useState(true);
+  const [cheat] = useState(false);
 
   // Function used to update score values for parent component
   const checkHighScore = (score) => {
