@@ -44,6 +44,10 @@ function CardsDisplay(props) {
     }
   };
 
+  const shuffleCardsDisplay = (n) => {
+    return sampleArray(Object.keys(cardDict), n);
+  };
+
   const addCardToList = (e) => {
     const cardName =
       e.target.parentElement.parentElement.querySelector(
@@ -52,7 +56,7 @@ function CardsDisplay(props) {
     console.log(cardName);
     // Check if card is in list
     checkCardInList(cardName);
-    console.log(`Sample: ${sampleArray(cardList)}`);
+    console.log(`Sample: ${shuffleCardsDisplay(6)}`);
   };
 
   return (
@@ -65,6 +69,17 @@ function CardsDisplay(props) {
               cardSymbol={cardDict[cardName]}
               cardText={cardName}
               clickFunction={addCardToList}
+            />
+          );
+        })}
+      </div>
+      <div className="card-list">
+        {clickedCards.map((cardName) => {
+          return (
+            <AppCard
+              key={cardName}
+              cardSymbol={cardDict[cardName]}
+              cardText={cardName}
             />
           );
         })}
