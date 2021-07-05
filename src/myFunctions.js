@@ -4,7 +4,7 @@
  * Function by Bergi
  * https://stackoverflow.com/a/19270021
  */
-function sampleArray(arr, n) {
+function sampleArray(arr, n = arr.length) {
   let result = new Array(n),
     len = arr.length,
     taken = new Array(len);
