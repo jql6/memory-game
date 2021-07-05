@@ -1,0 +1,23 @@
+
+.card-list {
+  display: inline-grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-list-container {
+  margin: 0px auto;
+  width: 80%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1099px) {
+  .card-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .card-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
