@@ -22,9 +22,14 @@ function AppCard(props) {
   return (
     <div className="app-card">
       <div className="card-background">
-        <p className={classifyCardColor(props.cardText)}>{props.cardSymbol}</p>
+        <p
+          className={classifyCardColor(props.cardText)}
+          onClick={props.clickFunction}
+        >
+          {props.cardSymbol}
+        </p>
       </div>
-      <p>{props.cardText}</p>
+      <p className="card-text">{props.cardText}</p>
     </div>
   );
 }
