@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+/* These link colors show up better with dark background */
+a{ color: rgb(97, 175, 239); }
+a:link{ color: rgb(97, 175, 239); }
+a:visited{ color: rgb(230, 180, 180); }
+
 body {
   background-color: #282c34;
   color: white;
