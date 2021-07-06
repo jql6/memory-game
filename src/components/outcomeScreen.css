@@ -1,7 +1,7 @@
 
 :root{
   --h1-position: 100%;
-  --animation-position: calc(var(--h1-position) + 50%);
+  --animation-position: calc(var(--h1-position) + 70%);
   --figure-8-top: translateY(calc(var(--animation-position) - 75%));
   --figure-8-middle: translateY(calc(var(--animation-position)));
   --figure-8-bottom: translateY(calc(var(--animation-position) + 75%));
@@ -79,13 +79,13 @@
     transform: translateX(0%);
   }
   25%{
-    transform: translateX(30%);
+    transform: translateX(20%);
   }
   50%{
     transform: translateX(0%);
   }
   75%{
-    transform: translateX(-30%);
+    transform: translateX(-20%);
   }
   to{
     transform: translateX(0%);
@@ -131,5 +131,23 @@
 @media screen and (min-width: 1100px) {
   #lose-screen h1 {
     font-size: 10rem;
+  }
+
+  @keyframes figure-8-x {
+    from{
+      transform: translateX(0%);
+    }
+    25%{
+      transform: translateX(30%);
+    }
+    50%{
+      transform: translateX(0%);
+    }
+    75%{
+      transform: translateX(-30%);
+    }
+    to{
+      transform: translateX(0%);
+    }
   }
 }
