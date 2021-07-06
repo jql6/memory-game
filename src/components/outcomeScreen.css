@@ -45,7 +45,7 @@
   animation-name: spin;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.9, 0.1, 0.1, 0.9);
+  animation-timing-function: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 }
 
 .figure-8-x{

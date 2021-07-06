@@ -37,7 +37,7 @@ function CardsDisplay(props) {
 
   const [loseState, setLoseState] = useState(false);
 
-  const [winState, setWinState] = useState(false);
+  const [winState, setWinState] = useState(true);
   // Cheat mode for debugging (you get to see clicked cards)
   const [cheat] = useState(false);
 
