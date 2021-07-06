@@ -17,7 +17,7 @@
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: default;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Apple Symbols';
   font-size: var(--card-font-size);
   margin: 0px;
   padding: 0px;
