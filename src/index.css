@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Apple Symbols';
-  src: local('Apple Symbols'), url(./fonts/Apple\ Symbols.ttf)
-      format('truetype');
+  font-family: 'Apple Symbols - Playing Cards';
+  src: local('Apple Symbols - Playing Cards'),
+    url(./fonts/Apple\ Symbols\ -\ Playing\ Cards.ttf) format('truetype');
 }
 
 body {
