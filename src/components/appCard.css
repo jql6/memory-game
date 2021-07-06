@@ -17,6 +17,7 @@
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: default;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: var(--card-font-size);
   margin: 0px;
   padding: 0px;
@@ -39,7 +40,7 @@
 
 .app-card .card-background .card {
   position: absolute;
-  bottom: -22%;
+  bottom: -11%;
   left: -8%;
 }
 
