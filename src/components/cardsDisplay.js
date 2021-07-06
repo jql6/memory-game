@@ -1,6 +1,6 @@
 // cardsDisplay.js
 import "./cardsDisplay.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AppCard from "./appCard";
 import OutcomeScreen from "./outcomeScreen";
 import cardDict from "../cardDict";
@@ -39,7 +39,7 @@ function CardsDisplay(props) {
 
   const [winState, setWinState] = useState(false);
   // Cheat mode for debugging (you get to see clicked cards)
-  const [cheat] = useState(false);
+  const [cheat] = useState(true);
 
   // Function used to update score values for parent component
   const checkHighScore = (score) => {
@@ -84,8 +84,7 @@ function CardsDisplay(props) {
       });
 
       if (!possible) {
-        // Choose a random index in card list
-        let sampledIndex = sampleArray(Object.keys(cardList), 1);
+        console.log(shuffledCardList);
         // Choose a card from nonclicked cards
         // This should always be possible because the else is handled in
         // the useEffects portion to display win screen
@@ -95,32 +94,25 @@ function CardsDisplay(props) {
           return;
         } else {
           let sampledValidCard = sampleArray(nonClickedCards, 1)[0];
-          shuffledCardList = [
-            ...shuffledCardList.slice(0, sampledIndex),
+          console.log(sampledValidCard);
+          // Using this because occasionally there's a bug where temporaryArray2
+          // is empty
+          console.log([...shuffledCardList.slice(0, cardList.length - 1)]);
+          console.log(sampledValidCard);
+          // Replace last card with valid card
+          let newShuffledCardList = [
+            ...shuffledCardList.slice(0, cardList.length - 1),
             sampledValidCard,
-            ...shuffledCardList.slice(sampledIndex + 1),
           ];
+          console.log(newShuffledCardList);
+          shuffledCardList = sampleArray(newShuffledCardList, cardList.length);
+          console.log(shuffledCardList);
         }
       }
       // Shuffle the card list
       setCardList(shuffledCardList);
     }
   };
-
-  // componentDidUpdate
-  useEffect(() => {
-    // Display lose screen if state is losing
-    if (loseState) {
-      // Display lose screen
-      // Lose screen should trigger reset when clicking outside of box or
-      // something
-    } else if (winState) {
-      // Show win screen
-    } else {
-      // Make a shuffled card list
-      // Display clicked cards
-    }
-  });
 
   const resetGame = () => {
     // Reset lose state
@@ -152,8 +144,8 @@ function CardsDisplay(props) {
         })}
       </div>
       <div
-        className="clicked-cards card-list"
-        style={{ display: cheat ? "grid" : "none" }}
+        className="card-list clicked-cards"
+        style={{ display: cheat ? "inline-grid" : "none" }}
       >
         {clickedCards.map((cardName) => {
           return (
