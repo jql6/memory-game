@@ -79,37 +79,28 @@ function CardsDisplay(props) {
         if (nonClickedCards.includes(card)) {
           possible = true;
         }
-        // Could use cardPool.filter((card) => !clickedCards.includes(card))
-        // if state is lagging behind
       });
 
       if (!possible) {
         console.log(shuffledCardList);
-        // Choose a card from nonclicked cards
-        // This should always be possible because the else is handled in
-        // the useEffects portion to display win screen
+        // If there are no more nonClicked cards, win
         if (nonClickedCards.length == 0) {
           setWinState(true);
           // Exit if win
           return;
         } else {
+          // Otherwise, get a valid card
           let sampledValidCard = sampleArray(nonClickedCards, 1)[0];
-          console.log(sampledValidCard);
-          // Using this because occasionally there's a bug where temporaryArray2
-          // is empty
-          console.log([...shuffledCardList.slice(0, cardList.length - 1)]);
-          console.log(sampledValidCard);
           // Replace last card with valid card
           let newShuffledCardList = [
             ...shuffledCardList.slice(0, cardList.length - 1),
             sampledValidCard,
           ];
-          console.log(newShuffledCardList);
+          // Shuffle the array
           shuffledCardList = sampleArray(newShuffledCardList, cardList.length);
-          console.log(shuffledCardList);
         }
       }
-      // Shuffle the card list
+      // Update the cardList
       setCardList(shuffledCardList);
     }
   };
