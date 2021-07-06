@@ -19,9 +19,6 @@ function CardsDisplay(props) {
     "Eight of Spades",
     "Nine of Spades",
     "Ten of Spades",
-    "Jack of Spades",
-    "Queen of Spades",
-    "King of Spades",
     "Ace of Hearts",
     "Two of Hearts",
     "Three of Hearts",
@@ -32,9 +29,6 @@ function CardsDisplay(props) {
     "Eight of Hearts",
     "Nine of Hearts",
     "Ten of Hearts",
-    "Jack of Hearts",
-    "Queen of Hearts",
-    "King of Hearts",
   ]);
 
   const [cardList, setCardList] = useState(sampleArray(cardPool, 6));
@@ -43,7 +37,7 @@ function CardsDisplay(props) {
 
   const [loseState, setLoseState] = useState(false);
 
-  const [winState, setWinState] = useState(true);
+  const [winState, setWinState] = useState(false);
   // Cheat mode for debugging (you get to see clicked cards)
   const [cheat] = useState(false);
 

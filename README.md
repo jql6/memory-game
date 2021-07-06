@@ -20,8 +20,8 @@ cards.
 A round starts when your score is at 0 and ends once you've lost or won.
 
 The display only shows 6 cards from the card pool. The card pool currently
-consists of cards with Spades and Hearts suits and excludes Diamonds and Clubs
-suits.
+consists of cards from 1 (Ace) to 10 with Spades and Hearts suits and excludes
+Diamonds and Clubs suits.
 
 ### What if all of the cards that are displayed are ones that I've already clicked?
 
