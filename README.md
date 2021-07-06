@@ -27,3 +27,9 @@ Diamonds and Clubs suits.
 
 You are guaranteed to have at least one card in the display that you haven't
 clicked before.
+
+### Spoilers
+
+<details><summary>Win screen</summary>
+![win](https://user-images.githubusercontent.com/46179386/124534093-6acdc500-ddc8-11eb-9c84-0ff4fc3e20fc.gif)
+</details>
