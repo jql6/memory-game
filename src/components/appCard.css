@@ -44,8 +44,16 @@
   left: -8.5%;
 }
 
+.app-card .black {
+  color: #b9c5ff
+}
+
 .app-card .black:hover {
   color: #0025cc
+}
+
+.app-card .red {
+  color: #ffbcbc
 }
 
 .app-card .red:hover {

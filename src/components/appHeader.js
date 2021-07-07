@@ -10,6 +10,9 @@ function AppHeader(props) {
         | <a href="https://jql6.github.io/">Return to homepage</a>
       </p>
       <p>
+        <strong>Instructions: Click on new cards to advance your score!</strong>
+      </p>
+      <p>
         Current Score: {props.currentScoreValue} | High score:{" "}
         {props.highScoreValue}
       </p>
