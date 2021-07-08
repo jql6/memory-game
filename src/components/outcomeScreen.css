@@ -1,7 +1,7 @@
 
 :root{
   --h1-position: 100%;
-  --animation-position: calc(var(--h1-position) + 70%);
+  --animation-position: calc(var(--h1-position) + 150%);
   --figure-8-top: translateY(calc(var(--animation-position) - 75%));
   --figure-8-middle: translateY(calc(var(--animation-position)));
   --figure-8-bottom: translateY(calc(var(--animation-position) + 75%));
@@ -11,6 +11,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   position: fixed;
+  top: 0px;
   left: 0px;
   right: 0px;
   text-align: center;
@@ -38,7 +39,7 @@
 
 #lose-screen p {
   position: relative;
-  top: 40%;
+  top: 70%;
 }
 
 .spinning {
@@ -64,13 +65,22 @@
 
 @keyframes spin {
   from {
-      transform:rotate(0deg);
+    color: #0025cc;
+    transform:rotate(0deg);
+  }
+  25% {
+    color: #cf6ecf;
   }
   50%{
+    color: #cc0000;
     transform:rotate(360deg);
   }
+  75%{
+    color: #cf6ecf;
+  }
   to {
-      transform:rotate(720deg);
+    color: #0025cc;
+    transform:rotate(720deg);
   }
 }
 

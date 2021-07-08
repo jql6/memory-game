@@ -11,7 +11,7 @@ function OutcomeScreen(props) {
     >
       <div className="figure-8-x">
         <div className="figure-8-y">
-          <h1 className="spinning">
+          <h1 className={props.win ? "spinning" : ""}>
             {props.win
               ? "You win!"
               : props.lose
@@ -20,7 +20,7 @@ function OutcomeScreen(props) {
           </h1>
         </div>
       </div>
-      <p>Click to reset</p>
+      <p className="reset-instruction">Click to reset</p>
     </div>
   );
 }
