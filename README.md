@@ -28,6 +28,11 @@ Diamonds and Clubs suits. The highest possible score is 20.
 You are guaranteed to have at least one card in the display that you haven't
 clicked before.
 
+I
+[ensured that valid cards would display](https://github.com/jql6/memory-game/blob/ff584821e5a3a106daf1ad700a1b9cc34c2d0b9f/src/components/cardsDisplay.js#L91)
+by keeping track of the non-clicked cards and shuffling one of those cards into
+the display if the display only showed clicked cards.
+
 ### Spoilers
 
 <details><summary>Win screen</summary>
