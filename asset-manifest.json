@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.1374ca2a.chunk.css",
+    "main.css": "/memory-game/static/css/main.d5b2aeac.chunk.css",
     "main.js": "/memory-game/static/js/main.ccaee2f6.chunk.js",
     "main.js.map": "/memory-game/static/js/main.ccaee2f6.chunk.js.map",
     "runtime-main.js": "/memory-game/static/js/runtime-main.55c6201d.js",
@@ -8,14 +8,14 @@
     "static/js/2.8b673056.chunk.js": "/memory-game/static/js/2.8b673056.chunk.js",
     "static/js/2.8b673056.chunk.js.map": "/memory-game/static/js/2.8b673056.chunk.js.map",
     "index.html": "/memory-game/index.html",
-    "static/css/main.1374ca2a.chunk.css.map": "/memory-game/static/css/main.1374ca2a.chunk.css.map",
+    "static/css/main.d5b2aeac.chunk.css.map": "/memory-game/static/css/main.d5b2aeac.chunk.css.map",
     "static/js/2.8b673056.chunk.js.LICENSE.txt": "/memory-game/static/js/2.8b673056.chunk.js.LICENSE.txt",
     "static/media/index.css": "/memory-game/static/media/Apple Symbols - Playing Cards.0abb74fd.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.55c6201d.js",
     "static/js/2.8b673056.chunk.js",
-    "static/css/main.1374ca2a.chunk.css",
+    "static/css/main.d5b2aeac.chunk.css",
     "static/js/main.ccaee2f6.chunk.js"
   ]
 }
